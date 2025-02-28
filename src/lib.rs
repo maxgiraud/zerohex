@@ -43,7 +43,6 @@ pub fn derive_zerohex(input: TokenStream) -> TokenStream {
 
     let expanded = quote! {
         use serde::{Serialize, Deserialize, de::Error};
-        use thiserror::Error;
         use hex::{FromHex, FromHexError};
         use std::{str::FromStr};
 
