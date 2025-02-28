@@ -1,0 +1,14 @@
+[package]
+name = "zerohex"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.38"
+syn = "2.0.98"
+serde = { version = "1.0.218", features = ["derive"] }
+hex = "0.4.3"
+thiserror = "2.0.11"
